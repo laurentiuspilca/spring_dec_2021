@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "httpBin", url = "http://httpbin.org")
+@FeignClient(name = "httpBin", url = "${httpbin.url}")
 public interface HttpBinProxy {
 
   @PostMapping("/anything")

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.Optional;
 
 public interface ProductRepository extends JpaRepository<Product, Integer> {
-  
-  @Query("SELECT p FROM Product p WHERE p.name = :name")
+
+  @Query("SELECT p FROM Product p WHERE p.name = :name") // JPQL / HQL
   Optional<Product> findProductByName(String name);
 }

@@ -1,5 +1,6 @@
 package com.example.entities;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,6 +13,7 @@ import java.math.BigDecimal;
 @Entity
 @Getter
 @Setter
+@EqualsAndHashCode
 public class Product {
 
   @Id
